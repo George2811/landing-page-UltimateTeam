@@ -222,333 +222,37 @@ input[type="checkbox"]{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Plan Section/**/
 .plans{
     height: 550px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
+.cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
 .freeAccount{
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     border-radius: 30px;
     padding: 5%;
     background: linear-gradient(90deg, rgba(46,53,56,1) 8%, rgba(21,243,207,1) 100%);
+
 }
 .homeOffice{
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     border-radius: 30px;
@@ -557,6 +261,10 @@ input[type="checkbox"]{
 }
 .collaborative{
     width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     border-radius: 30px;
@@ -569,21 +277,29 @@ input[type="checkbox"]{
 .plans h3{
     color: white;
 }
+.plans h4{
+    font-size: 50px;
+    color: white;
+}
 .plans label{
     color: white;
 }
 .plans p{
-    color: white;
-}
-
+    color: white;}
 /*Register Section*/
 .register{
     height: 550px;
     background: #3E474B;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+.info-register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .register p{
     color: white;
@@ -595,7 +311,7 @@ input[type="checkbox"]{
     color: black;
 }
 .register a{
-    width: 15%;
+    width: 25%;
     margin: 4% 0%;
     text-align: center;
     border-radius: 30px;
@@ -614,9 +330,11 @@ input[type="checkbox"]{
 }
 .textLeft{
     font-size: 20px;
+    text-align: center;
 }
 .textCenter{
     font-size: 25px;
+    text-align: center;
 }
 .textRight i{
     font-size: 50px;
