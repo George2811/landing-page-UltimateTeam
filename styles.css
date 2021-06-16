@@ -500,25 +500,95 @@ input[type="checkbox"]{
 /*Plan Section/**/
 .plans{
     height: 550px;
-    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
+.freeAccount{
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5%;
+    background: linear-gradient(90deg, rgba(46,53,56,1) 8%, rgba(21,243,207,1) 100%);
+}
+.homeOffice{
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5%;
+    background: linear-gradient(90deg, rgba(46,53,56,1) 8%, rgba(21,243,207,1) 100%);
+}
+.collaborative{
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5%;
+    background: linear-gradient(90deg, rgba(46,53,56,1) 8%, rgba(21,243,207,1) 100%);
+}
+.fa-check{
+    color: white;
+}
+.plans h3{
+    color: white;
+}
+.plans label{
+    color: white;
+}
+.plans p{
+    color: white;
+}
 
 /*Register Section*/
 .register{
     height: 550px;
     background: #3E474B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-
+.register p{
+    color: white;
+}
+.register h2{
+    color: white;
+}
+.register h3{
+    color: black;
+}
+.register a{
+    width: 15%;
+    margin: 4% 0%;
+    text-align: center;
+    border-radius: 30px;
+    border: 5px #15F3CF;
+    padding: 2%;
+    background-color: white;
+}
 
 /*Footer Section*/
 .footer{
     height: 225px;
     background: #3E474B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.textLeft{
+    font-size: 20px;
+}
+.textCenter{
+    font-size: 25px;
+}
+.textRight i{
+    font-size: 50px;
 }
 .fa-twitter-square{
     color: #15F3CF;
-    width: 300px;
+
 }
 .fa-instagram{
     color: #15F3CF;
@@ -526,3 +596,11 @@ input[type="checkbox"]{
 .fa-facebook-square{
     color: #15F3CF;
 }
+.pollitos{
+    color: #15F3CF;
+
+}
+.footer p{
+    color: white;
+}
+
