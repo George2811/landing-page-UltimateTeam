@@ -5,3 +5,149 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
+h2{
+    font-weight: 500;
+}
+nav{
+    position: sticky;
+    background: #3E474B;
+    width: 100%;
+    padding: 24px 0;
+    z-index: 12;
+    box-shadow: 0px 0px 3px rgb(110, 110, 110);
+
+}
+nav .menu{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.menu .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.menu ul{
+    display: inline-flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 7px;
+}
+.menu ul li:first-child{
+    margin-left: 0px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+}
+.menu ul li a:hover{
+    font-size: 17px;
+    font-weight: 500;
+}
+/* Navbar Buttons*/
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+input[type="checkbox"]{
+    display: none;
+}
+/*Cover Section*/
+.cover{
+    height: 550px;
+    background: linear-gradient(90deg, rgba(46,53,56,1) 8%, rgba(21,243,207,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info-presentation{
+    height: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.info-presentation h2{
+    width: 60%;
+}
+.info-presentation p{
+    width: 60%;
+}
+
+
+
+
+
+/*Responsive Design*/
+@media (max-width: 1000px){
+    nav{
+        padding: 15px 20px 15px 30px;
+    }
+    .cover{
+        height: 600px;
+        flex-direction: column;
+    }
+    .img-port svg{
+        width: 300px;
+    }
+}
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before {
+        content: "\f00d";
+    }
+    nav .menu ul {
+        position: fixed;
+        top: 52px;
+        left: -100%;
+        background: #3E474B;
+        height: 54vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        box-shadow: 0px 0px 3px rgb(110, 110, 110);
+    }
+    #click:checked ~ ul {
+        left: 0;
+    }
+    nav .menu ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+    nav .menu ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a {
+        margin-left: 0px;
+    }
+    nav .menu ul li a {
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    nav .menu ul li a:hover {
+        background: none;
+        color: #15F3CF;
+        font-weight: 700;
+    }
+}
