@@ -5,17 +5,24 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
+.spacer{
+    position: absolute;
+    left:25%;
+    background-color: #15F3CF;
+    height: 1px;
+    width: 50%;
+}
 h2{
     font-weight: 500;
 }
 nav{
     position: sticky;
+    top: 0px;
     background: #3E474B;
     width: 100%;
     padding: 24px 0;
     z-index: 12;
     box-shadow: 0px 0px 3px rgb(110, 110, 110);
-
 }
 nav .menu{
     max-width: 1250px;
@@ -139,7 +146,104 @@ input[type="checkbox"]{
     color: #15F3CF;
     font-size: 60px;
 }
+/*Plan Section/**/
+.plans{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.card{
+    width: 20%;
+    height: 300px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgba(46,53,56,1) 8%, rgba(21,243,207,1) 100%);
+}
+.fa-check{
+    color: white;
+}
+.plans h3, .plans h4, .plans label, .plans p{
+    color: white;
+}
+.plans h4{
+    font-size: 50px;
+}
+/*Register Section*/
+.register{
+    height: 550px;
+    background: #3E474B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info-register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register p{
+    color: white;
+}
+.register h2{
+    color: white;
+}
+.register h3{
+    color: black;
+}
+.register button{
+    width: 25%;
+    margin: 4% 0%;
+    text-align: center;
+    border-radius: 30px;
+    border: 5px #15F3CF;
+    padding: 2%;
+    background-color: white;
+    font-weight: 600;
+}
+.register button:hover{
+    cursor: pointer;
+    border: 2px solid #15F3CF;
+    background-color: #3E474B;
+}
 
+/*Footer Section*/
+.footer{
+    height: 225px;
+    background: #3E474B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.textLeft{
+    font-size: 20px;
+    text-align: center;
+}
+.textCenter{
+    font-size: 25px;
+    text-align: center;
+}
+.textRight i{
+    font-size: 30px;
+}
+.fa-twitter-square, .fa-instagram, .fa-facebook-square, .pollitos{
+    color: #15F3CF;
+}
+.footer p{
+    color: white;
+    font-size: 15px;
+}
 
 /*Responsive Design*/
 @media (max-width: 1000px){
@@ -158,7 +262,7 @@ input[type="checkbox"]{
         flex-direction: column;
         flex-flow: column-reverse;
     }
-    .img-solution svg{
+    .img-solution svg, .img-computer svg{
         width: 300px;
     }
     .info-solution{
@@ -170,6 +274,16 @@ input[type="checkbox"]{
     .benefits_list{
         width: 80%;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        width: 30%;
+    }
+    .register{
+        height: 650px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5% 0%;
     }
 }
 @media (max-width: 920px) {
@@ -220,140 +334,33 @@ input[type="checkbox"]{
         color: #15F3CF;
         font-weight: 700;
     }
+    .card{
+        width: 30%;
+    }
+    .info-register{
+        height: 600px;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 690px) {
+    .plans{
+        height: 1150px;
+    }
+    .cards{
+        height: 980px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card{
+        width: 60%;
+        padding: 2% 0%;
+    }
+    .register p{
+        width: 80%;
+        text-align: center;
+    }
 }
 
-/*Plan Section/**/
-.plans{
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.cards{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-}
-.freeAccount{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    border-radius: 30px;
-    padding: 5%;
-    background: linear-gradient(90deg, rgba(46,53,56,1) 8%, rgba(21,243,207,1) 100%);
 
-}
-.homeOffice{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    border-radius: 30px;
-    padding: 5%;
-    background: linear-gradient(90deg, rgba(46,53,56,1) 8%, rgba(21,243,207,1) 100%);
-}
-.collaborative{
-    width: 30%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    border-radius: 30px;
-    padding: 5%;
-    background: linear-gradient(90deg, rgba(46,53,56,1) 8%, rgba(21,243,207,1) 100%);
-}
-.fa-check{
-    color: white;
-}
-.plans h3{
-    color: white;
-}
-.plans h4{
-    font-size: 50px;
-    color: white;
-}
-.plans label{
-    color: white;
-}
-.plans p{
-    color: white;}
-/*Register Section*/
-.register{
-    height: 550px;
-    background: #3E474B;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.info-register{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.register p{
-    color: white;
-}
-.register h2{
-    color: white;
-}
-.register h3{
-    color: black;
-}
-.register a{
-    width: 25%;
-    margin: 4% 0%;
-    text-align: center;
-    border-radius: 30px;
-    border: 5px #15F3CF;
-    padding: 2%;
-    background-color: white;
-}
-
-/*Footer Section*/
-.footer{
-    height: 225px;
-    background: #3E474B;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.textLeft{
-    font-size: 20px;
-    text-align: center;
-}
-.textCenter{
-    font-size: 25px;
-    text-align: center;
-}
-.textRight i{
-    font-size: 50px;
-}
-.fa-twitter-square{
-    color: #15F3CF;
-
-}
-.fa-instagram{
-    color: #15F3CF;
-}
-.fa-facebook-square{
-    color: #15F3CF;
-}
-.pollitos{
-    color: #15F3CF;
-
-}
-.footer p{
-    color: white;
-}
 
